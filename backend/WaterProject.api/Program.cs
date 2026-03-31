@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<WaterDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("WaterDbContext")));
 builder.Services.AddCors(options => options.AddPolicy( "AllowReactApp", policy =>
 {
-    policy.WithOrigins("http://localhost:3003")
+    policy.AllowAnyOrigin()
         .AllowAnyMethod()
         .AllowAnyHeader();
 }));
