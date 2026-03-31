@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+import type { CartItem } from '../types/CartItem';
 
 function CartPage() {
   const navigate = useNavigate();

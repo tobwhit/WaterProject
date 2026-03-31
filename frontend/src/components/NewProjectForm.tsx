@@ -15,7 +15,7 @@ const NewProjectForm = ({ onSuccess, onCancel }: NewProjectFromProps) => {
     projectRegionalProgram: '',
     projectImpact: 0,
     projectPhase: '',
-    projectFunctionailtyStatus: '',
+    projectFunctionalityStatus: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -80,7 +80,7 @@ const NewProjectForm = ({ onSuccess, onCancel }: NewProjectFromProps) => {
         <input
           type="text"
           name="projectFunctionailtyStatus"
-          value={formData.projectFunctionailtyStatus}
+          value={formData.projectFunctionalityStatus}
           onChange={handleChange}
         />
       </label>
